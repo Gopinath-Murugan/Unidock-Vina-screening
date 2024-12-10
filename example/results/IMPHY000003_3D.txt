@@ -1,0 +1,70 @@
+Uni-Dock v1.1.1
+
+If you used Uni-Dock in your work, please cite:               
+ 
+Yu, Y., Cai, C., Wang, J., Bo, Z., Zhu, Z., & Zheng, H. (2023). 
+Uni-Dock: GPU-Accelerated Docking Enables Ultralarge Virtual Screening. 
+Journal of Chemical Theory and Computation.                    
+https://doi.org/10.1021/acs.jctc.2c01145                       
+
+Tang, S., Chen, R., Lin, M., Lin, Q., Zhu, Y., Ding, J., ... & Wu, J. (2022). 
+Accelerating autodock vina with gpus. Molecules, 27(9), 3041. 
+DOI 10.3390/molecules27093041                                 
+
+J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  
+AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      
+Field, and Python Bindings, J. Chem. Inf. Model. (2021)       
+DOI 10.1021/acs.jcim.1c00203                                  
+
+O. Trott, A. J. Olson,                                        
+AutoDock Vina: improving the speed and accuracy of docking    
+with a new scoring function, efficient optimization and        
+multithreading, J. Comp. Chem. (2010)                         
+DOI 10.1002/jcc.21334                                         
+
+Please refer to https://github.com/dptech-corp/Uni-Dock/ for  
+bug reporting, license agreements, and more information.      
+
+Scoring function : vina
+Rigid receptor: receptor.pdbqt
+Grid center: X -24.247 Y 11.918 Z 11.502
+Grid size  : X 30 Y 30 Z 30
+Grid space : 0.375
+Exhaustiveness: 384
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Total ligands: 1
+Set GPU device id to 0
+Available Memory = 3303MiB   Total Memory = 4095MiB
+all_ligands.size():1
+max_num_atoms:18
+max_num_torsions:1
+max_num_rigids:1
+max_num_lig_pairs:0
+Small Group:
+Max num_atoms: 18 Max num_torsions: 1 Max num_rigids: 1 Max num_lig_pairs: 0
+Group size: 1
+Medium Group:
+Large Group:
+Extra Large Group:
+Small
+Max num_atoms: 18 Max num_torsions: 1 Max num_rigids: 1 Max num_lig_pairs: 0
+Group size: 1
+Small Batch 1 size: 1
+Performing docking (random seed: -1264830276) ... Time spend on GPU is 153.996033 ms
+CUDA Kernel running time: 318
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -5.734          0          0
+   2        -5.64      2.873      4.345
+   3       -5.555      1.715      2.919
+   4       -5.323      2.987      5.447
+   5       -5.303      2.756      5.275
+   6       -5.037      13.27      15.51
+   7       -4.997      13.09      15.24
+poses saveing time: 3
+Batch 1 running time: 663ms

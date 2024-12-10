@@ -1,0 +1,74 @@
+Uni-Dock v1.1.1
+
+If you used Uni-Dock in your work, please cite:               
+ 
+Yu, Y., Cai, C., Wang, J., Bo, Z., Zhu, Z., & Zheng, H. (2023). 
+Uni-Dock: GPU-Accelerated Docking Enables Ultralarge Virtual Screening. 
+Journal of Chemical Theory and Computation.                    
+https://doi.org/10.1021/acs.jctc.2c01145                       
+
+Tang, S., Chen, R., Lin, M., Lin, Q., Zhu, Y., Ding, J., ... & Wu, J. (2022). 
+Accelerating autodock vina with gpus. Molecules, 27(9), 3041. 
+DOI 10.3390/molecules27093041                                 
+
+J. Eberhardt, D. Santos-Martins, A. F. Tillack, and S. Forli  
+AutoDock Vina 1.2.0: New Docking Methods, Expanded Force      
+Field, and Python Bindings, J. Chem. Inf. Model. (2021)       
+DOI 10.1021/acs.jcim.1c00203                                  
+
+O. Trott, A. J. Olson,                                        
+AutoDock Vina: improving the speed and accuracy of docking    
+with a new scoring function, efficient optimization and        
+multithreading, J. Comp. Chem. (2010)                         
+DOI 10.1002/jcc.21334                                         
+
+Please refer to https://github.com/dptech-corp/Uni-Dock/ for  
+bug reporting, license agreements, and more information.      
+
+Scoring function : vina
+Rigid receptor: receptor.pdbqt
+Grid center: X -24.247 Y 11.918 Z 11.502
+Grid size  : X 30 Y 30 Z 30
+Grid space : 0.375
+Exhaustiveness: 384
+CPU: 0
+Verbosity: 1
+
+Computing Vina grid ... done.
+Total ligands: 1
+Set GPU device id to 0
+Available Memory = 3303MiB   Total Memory = 4095MiB
+all_ligands.size():1
+max_num_atoms:63
+max_num_torsions:16
+max_num_rigids:4
+max_num_lig_pairs:1368
+Small Group:
+Max num_atoms: -2147483648 Max num_torsions: -2147483648 Max num_rigids: -2147483648 Max num_lig_pairs: -2147483648
+Group size: 0
+Medium Group:
+Large Group:
+Extra Large Group:
+Max num_atoms: 63 Max num_torsions: 16 Max num_rigids: 4 Max num_lig_pairs: 1368
+Group size: 1
+Extra Large
+Max num_atoms: 63 Max num_torsions: 16 Max num_rigids: 4 Max num_lig_pairs: 1368
+Group size: 1
+Extra Large Batch 1 size: 1
+Performing docking (random seed: 861381897) ... Time spend on GPU is 3994.432129 ms
+CUDA Kernel running time: 4390
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1       -5.771          0          0
+   2       -5.553      5.574       9.97
+   3       -5.386      8.201       12.5
+   4       -5.288        5.6      12.09
+   5        -5.28      6.044       14.3
+   6       -5.231      5.158      11.07
+   7       -5.216      1.529      2.044
+   8       -5.177      5.573      9.458
+   9       -5.155      4.586      7.738
+poses saveing time: 29
+Batch 1 running time: 7293ms
